@@ -1,0 +1,40 @@
+.Dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & caption {
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  & table {
+    width: 80%;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 1.5rem;
+  }
+
+  & th {
+    color: $white-background;
+    background: radial-gradient(
+      circle,
+      $color-gradient-dark 0%,
+      $color-gradient-mid 64%,
+      $color-gradient-light 100%
+    );
+  }
+
+  & table,
+  td,
+  th {
+    border: 2px solid $color-outline;
+  }
+}
+
+.Loading,
+.NoData {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}

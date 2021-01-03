@@ -1,0 +1,58 @@
+.Form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & > * {
+    margin: 1rem;
+  }
+
+  & header {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  & ::placeholder {
+    color: $color-placeholder;
+    font-family: inherit;
+  }
+  & input {
+    height: 3.5rem;
+    width: 30rem;
+    border: 2px solid $color-outline;
+    outline: none;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+    padding: 1rem;
+    font-family: inherit;
+
+    &:focus {
+      background-color: $color-hover;
+    }
+  }
+
+  & button {
+    height: 3.5rem;
+    width: 20rem;
+    background-color: $color-submit;
+    outline: none;
+    color: $white-background;
+    margin: 1rem;
+    border: none;
+    border-radius: 1rem;
+    transition: all 0.2s;
+    margin-bottom: 4rem;
+    letter-spacing: 0.4rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    font-family: inherit;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $gray-light;
+      color: $gray-dark;
+      border: 2px solid $color-submit;
+    }
+  }
+}

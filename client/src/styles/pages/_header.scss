@@ -1,0 +1,44 @@
+.Header {
+  text-align: center;
+
+  &__titleContainer {
+    height: 6vw;
+    min-height: 60px;
+    background: radial-gradient(
+      circle,
+      $color-gradient-dark 0%,
+      $color-gradient-mid 64%,
+      $color-gradient-light 100%
+    );
+    box-shadow: 0 0.5rem 2rem 1rem rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 2rem;
+    color: $white-background;
+  }
+
+  &__btn {
+    background-color: $gray-dark;
+    outline: none;
+    border: none;
+    color: $white-background;
+    padding: 1rem;
+    border: 2px solid $color-secondary;
+    margin: 1rem;
+    border-radius: 1rem;
+    transition: all 0.2s;
+    margin-bottom: 2rem;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $gray-light;
+      color: $gray-dark;
+    }
+  }
+}
